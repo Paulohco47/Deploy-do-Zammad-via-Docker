@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./data/letsencrypt:/etc/letsencrypt
+      - ./data/webroot:/usr/share/nginx/html
+    depends_on:
+      - zammad
+    networks:
+      - zammad_network
+
+  certbot:
+    image: certbot/certbot
+    command: certonly --webroot --webroot-path=/usr/share/nginx/html --email ${LETSENCRYPT_EMAIL} --agree-tos --no-eff-email -d ${DOMAIN}
+    volumes:
+      - ./data/webroot:/usr/share/nginx/html
+      - ./data/letsencrypt:/etc/letsencrypt
+    depends_on:
+      - nginx
+    networks:
+      - zammad_network
