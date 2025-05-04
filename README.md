@@ -74,7 +74,7 @@ Renovar certificado
 2. **Renovação Automática às 00h**
 
 ```bash
-  0 0 \* \* \* docker-compose run --rm certbot renew && docker-compose restart nginx
+  0 0 * * * docker-compose run --rm certbot renew && docker-compose restart nginx
 ```
 
 3. **Atualizar containers**
@@ -101,8 +101,6 @@ Renovar certificado
 docker-compose logs -f nginx
 docker-compose logs -f zammad
 ```
-
-````
 
 ```
 
