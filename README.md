@@ -100,9 +100,3 @@ Renovar certificado
 ```bash
 docker-compose logs -f nginx
 docker-compose logs -f zammad
-```
-
-```
-
-```
-````
