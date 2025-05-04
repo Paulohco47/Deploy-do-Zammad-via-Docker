@@ -1,4 +1,4 @@
-# Zammad com Docker + Nginx + SSL(Renovação Automática)
+# Zammad com Docker + Nginx + SSL (Renovação Automática)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
