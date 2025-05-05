@@ -1,8 +1,8 @@
 # Zammad com Docker + Nginx + SSL (Renovação Automática)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
-![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)](https://zammad.com/en)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](https://docs.kernel.org/)
+[![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)](https://nginx.org/en/docs/)
 
 Implementação do Zammad usando Docker Compose com proxy reverso Nginx e certificado SSL Let's Encrypt automatica.
 
